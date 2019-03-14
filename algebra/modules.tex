@@ -1,1 +1,22 @@
 \section{Modules}
+\subsection{Tensor product}
+\begin{Definition}
+    Let $R$ be a ring and $M, N$ be $R$-modules.
+    A \emph{tensor product of $M$ and $N$} is a pair $(T, \phi)$, where
+    \begin{itemize}
+        \item $T$ is a $R$-module and
+        \item $\phi: M \oplus N \to T$ is $R$-bilinear,
+    \end{itemize}
+    and the following universal property is fulfilled:
+
+    If $L$ is a $R$-module and $\chi: M \oplus N \to T$ is $R$-bilinear, there is a unique $R$-homomorphism 
+    $g: T \to L$ such that $\chi = g \circ \phi$.
+\end{Definition}
+
+\begin{Lemma}
+    Let $R$ be a ring and $M, N$ be $R$-modules.
+    \begin{enumerate}
+        \item The tensor product of $M$ and $N$ is unique up to isomorphism.
+        \item The tensor product of $M$ and $N$ exists.
+    \end{enumerate}
+\end{Lemma}
